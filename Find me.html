@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Find me
+	</title>
+</head>
+<body>
+	<p>Find me by click</p>
+
+<input type="submit" name="click here1" value="click here" onclick="n=(Math.random()*3+1)>>0;c1();this.disabled = true;">
+
+<input type="submit" name="click here2" value="click here" onclick="n=(Math.random()*3+1)>>0;c2();this.disabled = true;">
+
+<input type="submit" name="click here3" value="click here" onclick="n=(Math.random()*3+1)>>0;c3();this.disabled = true;">
+
+<div id="result">Result</div>
+   
+
+<script type="text/javascript">
+
+	let n=(Math.random()*3+1)>>0
+
+	var Found = function(){
+		document.getElementById('result').innerText = 'Found'
+	}
+
+	var Nothing = function(){
+		document.getElementById('result').innerText = 'Nothing'
+	}
+
+var c1 = function () {
+
+
+	if (n==1) {
+		Found()
+	}
+
+	else{
+		Nothing()
+
+	}
+}
+
+var c2 = function () {
+
+
+	if (n==1) {
+		Found()
+	}
+
+	else{
+		Nothing()
+	}
+}
+
+var c3 = function () {
+
+
+	if (n==1) {
+		Found()
+	}
+
+	else{
+		Nothing()
+	}
+}
+
+</script>
+
+
+</body>
+</html>
